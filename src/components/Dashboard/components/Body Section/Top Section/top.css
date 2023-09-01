@@ -1,0 +1,196 @@
+img {
+  width: 100%;
+  height: 100%;
+}
+
+:root {
+  --primaryColor: hsl(94, 59%, 35%);
+  --HoverVolor: #bdf094;
+  --paleGreen: hsl(96, 75%, 89%);
+  --whiteGreen: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0, 18%);
+  --textColor: hsl(240, 1%, 48%);
+  --bgColor: hsl( 220, 10%, 94% );
+  --greyText: rgba(190, 190, 190);
+  --inputColor: hsl(330, 12%, 97);
+  /* font type */
+  --biggesFontSize: 2.5rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontsize: .948rem;
+  --smalllFontsize: .813rem;
+  --smallestFontsize: .75rem;
+}
+
+.top-section .header-section {
+  justify-content: space-between;
+}
+.top-section .header-section .title h1 {
+  font-size: var(--h1FontSize);
+  color: var(--blackColor);
+  font-weight: 700;
+}
+.top-section .header-section .title p {
+  font-size: var(--normalFontsize);
+  color: var(--textColor);
+  font-weight: 500;
+}
+.top-section .header-section .search-bar {
+  padding: 1rem;
+  background: var(--whiteGreen);
+  border-radius: 5px;
+  gap: 1rem;
+  box-shadow: 0 2px 4px var(--inputColor);
+}
+.top-section .header-section .search-bar input {
+  border: none;
+  outline: none;
+  background: none;
+}
+.top-section .header-section .search-bar .icon {
+  color: var(--textColor);
+}
+.top-section .header-section .search-bar .icon:hover {
+  color: var(--primaryColor);
+}
+.top-section .header-section .admin-div {
+  gap: 1rem;
+}
+.top-section .header-section .admin-div .icon {
+  font-size: var(--biggesFontSize);
+  background: var(--whiteGreen);
+  border-radius: 1px;
+  padding: 5px;
+  box-shadow: 0px 2px 4px var(--inputColor);
+  color: var(--inputColor);
+}
+.top-section .header-section .admin-div .admin-image {
+  border: 3px solid var(--whiteGreen);
+  border-radius: 10px;
+  width: 2.3rem;
+  overflow: hidden;
+  height: 2.5rem;
+}
+.top-section .header-section .admin-div .admin-image img {
+  height: 100%;
+  border-radius: 10px;
+}
+.top-section .card-section {
+  margin-top: 1rem;
+  gap: 1rem;
+}
+.top-section .card-section .right-card {
+  position: relative;
+  flex-basis: 70%;
+  height: 200px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.top-section .card-section .right-card .video-div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.top-section .card-section .right-card .video-div video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.top-section .card-section .right-card h1, .top-section .card-section .right-card p, .top-section .card-section .right-card .btn {
+  z-index: 100;
+}
+.top-section .card-section .right-card h1 {
+  font-size: var(--h1FontSize);
+  color: var(--whiteGreen);
+  font-weight: 800;
+}
+.top-section .card-section .right-card p {
+  padding: 1rem;
+  color: var(--paleGreen);
+  font-weight: 500;
+}
+.top-section .card-section .right-card .buttons {
+  gap: 1rem;
+}
+.top-section .card-section .right-card .buttons .btn {
+  padding: 0.8rem 1rem;
+  color: var(--primaryColor);
+  border-radius: 2px solid transparent;
+}
+.top-section .card-section .right-card .buttons .transparent {
+  background: none;
+  border: 2px solid var(--paleGreen);
+  color: var(--paleGreen);
+}
+.top-section .card-section .right-card .buttons .transparent:hover {
+  background: var(--paleGreen);
+  color: var(--primaryColor);
+}
+.top-section .card-section .left-card {
+  flex-basis: 50%;
+}
+.top-section .card-section .left-card .main {
+  position: relative;
+  padding: 1rem;
+  height: 200px;
+  border-radius: 1rem;
+  justify-content: space-between;
+}
+.top-section .card-section .left-card .main::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 85%;
+  background: palegreen;
+  left: 0;
+  bottom: 0;
+  border-radius: 1rem;
+}
+.top-section .card-section .left-card .text-div {
+  z-index: 100;
+}
+.top-section .card-section .left-card .text-div h1 {
+  font-size: var(--h1FontSize);
+  padding-bottom: 1rem;
+  color: var(--blackColor);
+}
+.top-section .card-section .left-card .text-div .flex {
+  gap: 1.5rem;
+  font-weight: 500;
+  color: var(--blackColor);
+}
+.top-section .card-section .left-card .text-div .flex small {
+  font-size: var(--smalllFontsize);
+  display: block;
+  color: var(--primaryColor);
+  font-weight: 500;
+  padding: 1rem 0rem;
+  text-align: center;
+}
+.top-section .card-section .left-card .text-div .link {
+  margin-top: 2rem;
+  cursor: pointer;
+}
+.top-section .card-section .left-card .text-div .link:hover {
+  color: var(--primaryColor);
+}
+.top-section .card-section .left-card .text-div .link:hover .icon {
+  transform: translateX(18px);
+}
+.top-section .card-section .left-card .img-div {
+  transform: translateY(0px);
+}
+.top-section .card-section .left-card .img-div img {
+  width: 200px;
+}/*# sourceMappingURL=top.css.map */

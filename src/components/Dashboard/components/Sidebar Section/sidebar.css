@@ -1,0 +1,166 @@
+:root {
+  --primaryColor: hsl(94, 59%, 35%);
+  --HoverVolor: #bdf094;
+  --paleGreen: hsl(96, 75%, 89%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0, 18%);
+  --textColor: hsl(240, 1%, 48%);
+  --bgColor: hsl( 220, 10%, 94% );
+  --greyText: rgba(190, 190, 190);
+  --inputColor: hsl(330, 12%, 97);
+  /* font type */
+  --biggesFontSize: 2.5rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontsize: .948rem;
+  --smalllFontsize: .813rem;
+  --smallestFontsize: .75rem;
+}
+
+.sideBar {
+  background: var(--whiteColor);
+  box-shadow: 1px 0px 4px var(--greyText);
+  width: 18%;
+  height: 100%;
+  gap: 3rem;
+  overflow: auto;
+}
+.sideBar .logoDiv {
+  padding: 1.5rem 1.5rem 0;
+}
+.sideBar .logoDiv img {
+  max-width: 40px;
+  margin-right: 0.5rem;
+  border-radius: 2px;
+  padding: 0.2rem;
+}
+.sideBar .logoDiv h2 {
+  font-size: var(--h2FontSize);
+  color: var(--primaryColor);
+}
+.sideBar .Menu-Div .divTitle, .sideBar .Setting-Div .divTitle {
+  font-size: var(--h3FontSize);
+  color: var(--blackColor);
+  padding: 0 1.5rem 1.5rem;
+}
+.sideBar .Menu-Div .menuList .list-Item, .sideBar .Setting-Div .menuList .list-Item {
+  padding: 0.2rem 1.5rem;
+  width: 100%;
+  position: relative;
+  position: relative;
+}
+.sideBar .Menu-Div .menuList .list-Item::before, .sideBar .Setting-Div .menuList .list-Item::before {
+  position: absolute;
+  content: "";
+  height: 0%;
+  left: 0;
+  width: 5px;
+  bottom: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: var(--primaryColor);
+}
+.sideBar .Menu-Div .menuList .list-Item .menu-link, .sideBar .Setting-Div .menuList .list-Item .menu-link {
+  color: var(--greyText);
+  font-weight: 500;
+}
+.sideBar .Menu-Div .menuList .list-Item .menu-link .icon, .sideBar .Setting-Div .menuList .list-Item .menu-link .icon {
+  margin-right: 0.5rem;
+}
+.sideBar .Menu-Div .menuList .list-Item:hover .menu-link, .sideBar .Setting-Div .menuList .list-Item:hover .menu-link {
+  color: var(--primaryColor);
+  transition: 0;
+}
+.sideBar .Menu-Div .menuList .list-Item:hover::before, .sideBar .Setting-Div .menuList .list-Item:hover::before {
+  height: 100%;
+  transition: 250ms ease;
+}
+.sideBar .sidebar-card {
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+}
+.sideBar .sidebar-card .icon {
+  position: absolute;
+  background: var(--HoverVolor);
+  border: 10px solid var(--whiteColor);
+  font-size: 3rem;
+  border-radius: 50%;
+  top: -12px;
+  right: 50%;
+  transform: translate(50%);
+  z-index: 100;
+}
+.sideBar .sidebar-card .card-content {
+  position: relative;
+  padding: 1rem;
+  background: var(--HoverVolor);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.sideBar .sidebar-card .card-content h3 {
+  font-size: var(--h3FontSize);
+  margin-top: 1rem;
+  padding: 1rem;
+  font-weight: 800;
+  color: var(--blackColor);
+}
+.sideBar .sidebar-card .card-content p {
+  font-size: var(--normalFontsize);
+  color: var(--textColor);
+  padding-bottom: 1rem;
+  font-weight: 500;
+}
+.sideBar .sidebar-card .card-content .btn {
+  position: relative;
+  color: var(--textColor);
+  z-index: 1000;
+}
+.sideBar .sidebar-card .card-content .cirecle1, .sideBar .sidebar-card .card-content .cirecle2 {
+  position: absolute;
+  background: var(--paleGreen);
+  border-radius: 50%;
+  opacity: 0.2;
+}
+.sideBar .sidebar-card .card-content .cirecle1 {
+  height: 100px;
+  width: 100px;
+  top: -50px;
+  right: -50px;
+}
+.sideBar .sidebar-card .card-content .cirecle2 {
+  height: 150px;
+  width: 150px;
+  bottom: -50px;
+  right: -50px;
+  z-index: 1;
+}
+
+.logout {
+  background: var(--primaryColor);
+  justify-content: center;
+  padding: 1rem;
+  cursor: pointer;
+  width: 90%;
+  margin: auto;
+  border-radius: 5px;
+  color: whitesmoke;
+  font-size: 1rem;
+}
+.logout .icon {
+  margin-right: 0.5rem;
+  color: var(--whiteColor);
+  font-size: 1.5rem;
+}
+.logout:hover {
+  background: var(--HoverVolor);
+  transition: all 0.3s ease;
+  color: var(--blackColor);
+}
+.logout:hover .icon {
+  color: black;
+  transform: translateX(-5px);
+  transition: all 250ms ease-in;
+}/*# sourceMappingURL=sidebar.css.map */
